@@ -1,0 +1,245 @@
+/** Blueprint Overrides */
+.container {
+    width: 830px;
+    margin: 0 auto;
+}
+.span-21 {
+    margin-right: 0;
+}
+
+/**  Body               */
+body {
+    background-color: #f9f9f9;
+    background-image: url('../images/body_bg.png');
+    background-repeat: repeat-x;
+}
+a {
+    color: #8a1614 !important;
+}
+a:hover {
+    color: #b12623 !important;
+    text-decoration: none;
+}
+
+/** Buttons             */
+.button {
+    font-weight: bold;
+    padding: 8px 10px;
+    display: inline;
+    background: #777 url(../images/button_bg.png) repeat-x bottom;
+    border: none;
+    color: #fff !important;
+    cursor: pointer;
+    text-shadow: 1px 1px #666;
+    text-decoration: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.button:hover {
+    color: #fff !important;
+    background-position: 0 top;
+}
+.button.green { 
+    background-color: #58aa00;
+}
+.button.blue {
+    background-color: #2C6DA0;
+}
+
+/** Main                */
+#main {
+    padding-bottom: 45px;
+}
+
+/** Header              */
+#header {
+    height: 107px;
+    color: #f9f9f9;
+}
+
+/** Logo                */
+#logo h1 {
+    margin: 0;
+    padding: 36px 0 0 0;
+}
+
+/** Navigation          */
+#navigation {
+    color: #f9f9f9;
+}
+#navigation ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 34px;
+}
+#navigation ul li {
+    display: inline;
+    margin-right: 10px;
+}
+#navigation ul li a {
+    color: #f9f9f9 !important;
+    text-decoration: none;
+    padding: 9px 10px;
+}
+#navigation ul li a:hover {
+    background: #8a1614;
+}
+#navigation ul li a.selected {
+    background: #8a1614;
+}
+
+/** Contact             */
+#contact ul {
+    float: right;
+    margin: 0;
+    padding-top: 16px;
+}
+#contact ul li {
+    list-style-type: none;
+    padding-top: 5px;
+}
+#contact ul li a {
+    color: #fff !important;
+}
+#contact ul li span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/** Banner              */
+#banner     {
+    background: #fff;
+    background-image: url('../images/banner_bg.png');
+    background-repeat: no-repeat;
+    background-position: 480px -5px;
+    border: 1px solid #d5d5d5;
+    height: 200px;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 3px #ccc;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: 0px 0px 3px #ccc;
+}
+
+/** Download Area */
+.none a {
+    text-decoration: none;
+}
+
+
+.mac {
+    background: url(../images/mac.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    margin:5px;
+    width:24px;
+    height:24px;
+}
+
+.windows {
+    background: url(../images/windows.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    margin:5px;
+    width:24px;
+    height:24px;
+}
+.linux {
+    background: url(../images/linux.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    margin:5px;
+    width:24px;
+    height:24px;
+}
+
+.download {
+    background: url(../images/download.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    margin:5px;
+    width:24px;
+    height:24px;
+}
+
+
+.downloaditem {
+    border-bottom:1px solid #D5D5D5
+}
+
+#newfeatures ul li {
+    padding-top: 10px;
+}
+
+.vcenter {
+    padding-top: 7px;
+}
+
+
+
+/** Content             */
+#content {
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    margin-bottom: 1.5em;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 3px #ccc;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: 0px 0px 3px #ccc;
+}
+
+/** Main-Content        */
+#main-content h3 {
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+/** Sidebar             */
+#sidebar h4 {
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+/** Footer              */
+#footer {
+    background-color: #fff;
+    background-image: url('../images/footer_bg.png');
+    background-repeat: repeat-x;
+    border-top: 1px solid #d5d5d5;
+    padding-top: 15px;
+    height: 30px;
+    margin-top: -47px;
+}
+
+/** Copyright           */
+#copyright {
+    text-align: left;
+}
+
+/** Sitemap             */
+#sitemap {
+    text-align: right;
+}
+#sitemap ul {
+    color: #222;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+#sitemap ul li {
+    border-right: 1px solid #d5d5d5;
+    display: inline;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+#sitemap ul li.last_child {
+    border: none;
+    padding-right: 0;
+}
