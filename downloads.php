@@ -1,80 +1,33 @@
+---
+layout: saiku
+title: Home
+---
+
 <?php
 session_start();
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
-    "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Saiku - Next Generation Open Source Analysis - Home</title>
 
-        <!-- blueprint css -->
-        <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection">
-        <!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"><![endif]-->
-        <!-- eof blueprint css -->
-        <!-- sticky footer css -->
-        <link rel="stylesheet" href="css/sticky-footer.css" type="text/css" media="screen, projection">
-        <!-- eof sticky footer css -->
-        <!-- saiku css -->
-        <link rel="stylesheet" href="css/saiku.css" type="text/css" media="screen, projection">
-        <!-- eof saiku css -->
-    </head>
-    <body>
-        <!-- wrap -->
-        <div id="wrap">
-            <!-- main -->
-            <div id="main" class="container">
-                <!-- header -->
-                <div id="header" class="span-21">
-                    <!-- logo -->
-                    <div id="logo" class="span-10">
-                        <h1>
-                            <a href="http://www.analytical-labs.com/" title="Saiku - Next Generation Open Source Analytics">
-                                <img src="images/logo_img.png" alt="Saiku - Next Generation Open Source Analytics"/>
-                            </a>
-                        </h1>
-                    </div>
-                    <!-- eof logo -->
-                    <!-- contact -->
-                    <div id="contact" class="span-11 last">
-                        <ul>
-                            <li><span>E:&nbsp;&nbsp;</span> <a href="mailto:contact@analytical-labs.com" title="Email Analytical Labs">contact@analytical-labs.com</a></li>
-                            <!-- <li><span>P:</span> +44 203 239 0984 <img src="images/gb_flag_img.png" alt="United Kingdom" /></li> -->
-                            <li><span>T: &nbsp;&nbsp;</span> <a href="http://www.twitter.com/SaikuAnalytics" title="Follow Analytical Labs">@SaikuAnalytics</a></li>
-                            <li><span>ML:</span> <a href="https://groups.google.com/a/analytical-labs.com/group/saikudev/" title="Join the Saiku Developer Discussion Group">saikudev@googlegroups.com</a></li>
-                        </ul>
-                    </div>
-                    <div align="right">
-                        <a href="http://github.com/OSBI/saiku"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork Saiku on GitHub"></a>
-                    </div>
-                    <!-- eof contact -->
-                </div>
-                <!-- eof header -->
-                <!-- navigation -->
-                <div id="navigation" class="span-21">
-                    <ul>
-                        <li><a href="index.html" title="Home" class="selected">Home</a></li>
-                        <li><a href="screenshots.html" title="Screenshots">Screenshots</a></li>
-                        <li><a href="downloads.php" title="Downloads">Downloads</a></li>
-                        <li><a href="https://github.com/OSBI/saiku/wiki/_pages" title="Documentation" rel="new">Documentation</a></li>
-                        <li><a href="https://github.com/OSBI/saiku/issues" title="Issue Tracker" rel="new">Issue Tracker</a></li>
-                        <li><a href="http://ask.analytical-labs.com">Forum</a></li>
-                    </ul>
-                </div>
-                <!-- eof navigation -->
                                 <!-- content -->
                 <div id="content" class="span-24 prepend-top">
                     <!-- main-content -->
                     <div id="main-content" class="span-21 prepend-1 append-1 prepend-top append-bottom">
-                        <h3>Saiku 2.2 RC1</h3>
+                        <h3>Saiku 2.2</h3>
                         <p>
-                            Saiku 2.2 RC1 is a new major release that includes lot of improvements compared to 2.1. 
+                            Saiku 2.2 is a new major release that includes lot of improvements compared to 2.1. 
                             <br />We've been working very hard to implement new features, fix bugs and improve the general user interaction.
                             <br />In case we have missed anything, we would appreciate all filed bugs and feature requests in our <a href="https://github.com/OSBI/saiku/issues/" title="Saiku Issue Tracker">Issue Tracker</a>.
                             <br />
-                            <h3>What's new in 2.2 RC1?</h3>
+                            <h3>What's new in 2.2?</h3>
                             <div id="newfeatures" class="prepend-1">
                             <ul >
+                                <li>
+                                    <strong>Speed Boost</strong>
+                                    - Query execution received a massive speed improvement.
+                                </li>
+                                <li>
+                                    <strong>SSAS, Palo, SAP BW Compatibility</strong>
+                                    - We made sure that saiku works perfectly with other OLAP engines.
+                                </li>
                                 <li>
                                     <strong>Mondrian Roles</strong>
                                     - Apply role-based security to your Mondrian OLAP cubes.
@@ -93,12 +46,17 @@ session_start();
                                 </li>
                                 <li>
                                     <strong>Faster and more robust UI</strong>
-                                    - The user interface was completely rewritten for 2.2 RC1 and includes lots of speed improvements and bug fixes.
+                                    - The user interface was completely rewritten for 2.2 and includes lots of speed improvements and bug fixes.
                                 </li>
                                  <li>
                                     <strong>Charts</strong>
                                     - Saiku is now capable to produce some basic charts using <a href="https://github.com/webdetails/ccc" title="CCC by Webdetails">CCC by Webdetails</a>.
                                 </li>
+                                <li>
+                                    <strong>Basic Statistics</strong>
+                                    - You can now view some basic statistics (avg, min, max, std. dev, .etc) of your OLAP query.
+                                </li>
+
                             </ul>
                             </div>
                         
@@ -335,37 +293,37 @@ session_start();
 			?>
 				<h3>Downloads</h3>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Server (Including Foodmart DB)</span>
+					<span class="span-16 vcenter">Saiku Server 2.2 (Including Foodmart DB)</span>
 					<span class="span-3 none">
-					    <a href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.2-RC1.zip" style="display:inline-block" class="windows" ></a>
-					    <a href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.2-RC1.tar.gz" style="display:inline-block" class="mac" ></a>
-					    <a href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.2-RC1.tar.gz" style="display:inline-block" class="linux" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.2.zip" style="display:inline-block" class="windows" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.2.tar.gz" style="display:inline-block" class="mac" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.2.tar.gz" style="display:inline-block" class="linux" ></a>
 					</span>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Server</span>
+					<span class="span-16 vcenter">Saiku Server 2.2</span>
 					<span class="span-3 none">
-					    <a href="http://analytical-labs.com/downloads/saiku-server-2.2-RC1.zip" style="display:inline-block" class="windows" ></a>
-					    <a href="http://analytical-labs.com/downloads/saiku-server-2.2-RC1.tar.gz" style="display:inline-block" class="mac" ></a>
-					    <a href="http://analytical-labs.com/downloads/saiku-server-2.2-RC1.tar.gz" style="display:inline-block" class="linux" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.2.zip" style="display:inline-block" class="windows" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.2.tar.gz" style="display:inline-block" class="mac" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.2.tar.gz" style="display:inline-block" class="linux" ></a>
 					</span>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Pentaho BI Server Plugin</span>
+					<span class="span-16 vcenter">Saiku Pentaho BI Server Plugin 2.2</span>
 					<div align="center" class="span-3 none">
-					    <a href="http://analytical-labs.com/downloads/saiku-plugin-2.2-RC1.zip" style="display:inline-block" class="download" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 plugin',this.href]);" href="http://analytical-labs.com/downloads/saiku-plugin-2.2.zip" style="display:inline-block" class="download" ></a>
 					</div>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Backend WAR</span>
+					<span class="span-16 vcenter">Saiku Backend WAR 2.2</span>
 					<div align="center" class="span-3 none">
-					    <a href="http://analytical-labs.com/downloads/saiku-webapp-2.2-RC1.war" style="display:inline-block" class="download" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 manual',this.href]);" href="http://analytical-labs.com/downloads/saiku-webapp-2.2.war" style="display:inline-block" class="download" ></a>
 					</div>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku UI WAR</span>
+					<span class="span-16 vcenter">Saiku UI WAR 2.2</span>
 					<div align="center" class="span-3 none">
-					    <a href="http://analytical-labs.com/downloads/saiku-ui-2.2-RC1.war" style="display:inline-block" class="download" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 manual',this.href]);" href="http://analytical-labs.com/downloads/saiku-ui-2.2.war" style="display:inline-block" class="download" ></a>
 					</div>
 				</div>
 			<?php
@@ -383,42 +341,3 @@ session_start();
             <!-- eof main -->
         </div>
         <!-- eof wrap -->
-        <!-- footer -->
-        <div id="footer">
-            <!-- footer_wrap -->
-            <div id="footer_wrap" class="container">
-                <!-- copyright -->
-                <div id="copyright" class="span-5">
-                    <strong>Saiku &copy; 2011</strong>
-                </div>
-                <!-- eof copyright -->
-                <!-- sitemap -->
-                <div id="sitemap" class="span-16 last">
-                    <ul>
-                        <li><a href="mailto:contact@analytical-labs.com" title="Email Analytical Labs">contact@analytical-labs.com</a></li>
-                        <li class="last_child"><a href="http://www.twitter.com/SaikuAnalytics" title="Follow Analytical Labs">@SaikuAnalytics</a></li>
-                    </ul>
-                </div>
-                <!-- eof sitemap -->
-            </div>
-            <!-- eof footer_wrap -->
-        </div>
-        <!-- eof footer -->
-            <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-16172251-6']);
-  _gaq.push(['_setDomainName', 'none']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  </script>
-
-
-    </body>
-</html>

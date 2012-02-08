@@ -48,12 +48,12 @@ if(!check_email_address($_SESSION['Email'])){
 	header("location: downloads.php");
 }else{
 	
-	if(!file_exists('file.csv')){
-		$my_file = 'file.csv';
+	if(!file_exists('data/file.csv')){
+		$my_file = 'data/file.csv';
 		$handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
 	}
 	
-	$myFile = "file.csv";
+	$myFile = "data/file.csv";
 	$fh = fopen($myFile, 'a') or die("can't open file");
 	$stringData = "$_SESSION[FirstName],$_SESSION[LastName],$_SESSION[Email],$_SESSION[Company],$_SESSION[Country]\n";
 	fwrite($fh, $stringData);
