@@ -67,52 +67,45 @@ session_start();
                 <div id="content" class="span-24 prepend-top">
                     <!-- main-content -->
                     <div id="main-content" class="span-21 prepend-1 append-1 prepend-top append-bottom">
-                        <h3>Saiku 2.2</h3>
+                        <h3>Saiku 2.3</h3>
                         <p>
-                            Saiku 2.2 is a new major release that includes lot of improvements compared to 2.1. 
-                            <br />We've been working very hard to implement new features, fix bugs and improve the general user interaction.
+                            Saiku 2.3 is a new major release that includes lot of improvements.
+                            <br />We have implemented some cool new features, but also fixed some major bugs. You can view the details below.
                             <br />In case we have missed anything, we would appreciate all filed bugs and feature requests in our <a href="https://github.com/OSBI/saiku/issues/" title="Saiku Issue Tracker">Issue Tracker</a>.
                             <br />
-                            <h3>What's new in 2.2?</h3>
+                            <h3>What's new in 2.3?</h3>
                             <div id="newfeatures" class="prepend-1">
                             <ul >
-                                <li>
-                                    <strong>Speed Boost</strong>
-                                    - Query execution received a massive speed improvement.
+                            	 <li>
+                                    <strong>Sorting</strong>
+                                    - You can sort your results now by name or measure.
                                 </li>
                                 <li>
-                                    <strong>SSAS, Palo, SAP BW Compatibility</strong>
-                                    - We made sure that saiku works perfectly with other OLAP engines.
+                                    <strong>Tags</strong>
+                                    - With this new feature you can create new tags (some might call them named filter sets) based on one or serveral cells in your resultset. Saiku will then take the tuples that make up this result and you can apply them to any new query on this cube.
+                                    <br>Example: You can tag a cell "Male / Year 2003" and name the Tag "Tag1"; then create a completely new query and select products on columns vs. customers on rows and apply "Tag1". Saiku will then show you only products and customers which are Male and where there is data for 2003.
                                 </li>
                                 <li>
-                                    <strong>Mondrian Roles</strong>
-                                    - Apply role-based security to your Mondrian OLAP cubes.
+                                    <strong>MDX Editor</strong>
+                                    - Long promised, and finally implemented. The MDX Editor is back in saiku. You can now switch to mdx mode and run any arbitrary MDX you like and then save it.
                                 </li>
                                 <li>
-                                    <strong>Query Scenarios</strong>
-                                    - Change cell values on your resultset and perform basic What-If Analysis.
+                                    <strong>Tighter integration of the Saiku Biserver Plugin</strong>
+                                    - Picks up mondrian.properties from system/mondrian/mondrian.properties now.
                                 </li>
                                 <li>
-                                    <strong>Drill-Through</strong>
-                                    - Display or export all fact rows that make up a specific cell in your OLAP resultset.
-                                </li>
-                                <li>
-                                    <strong>Refresh Datasources / Clear Cache</strong>
-                                    - Reload your datasources configuration and clear the cache from within the UI.
-                                </li>
-                                <li>
-                                    <strong>Faster and more robust UI</strong>
-                                    - The user interface was completely rewritten for 2.2 and includes lots of speed improvements and bug fixes.
-                                </li>
-                                 <li>
-                                    <strong>Charts</strong>
-                                    - Saiku is now capable to produce some basic charts using <a href="https://github.com/webdetails/ccc" title="CCC by Webdetails">CCC by Webdetails</a>.
-                                </li>
-                                <li>
-                                    <strong>Basic Statistics</strong>
-                                    - You can now view some basic statistics (avg, min, max, std. dev, .etc) of your OLAP query.
+                                    <strong>Improved datasource management</strong>
+                                    - There were some issues where refreshing connections and applying roles didn't work. Both should work fine now!
                                 </li>
 
+                                <li>
+                                    <strong>Improved SSAS Compatibility</strong>
+                                    - We improved various areas in saiku to make sure its perfectly compatible with SSAS.
+                                </li>
+                                <li>
+                                    <strong>Reworked Drillthrough</strong>
+                                    - You can now choose the columns (levels and measures) that you want to see in your drillthrough result.
+                                </li>
                             </ul>
                             </div>
                         
@@ -349,43 +342,91 @@ session_start();
 			?>
 				<h3>Downloads</h3>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Server 2.2 (Including Foodmart DB)</span>
+					<span class="span-16 vcenter">Saiku Server 2.3 (Including Foodmart DB)</span>
 					<span class="span-3 none">
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.2.zip" style="display:inline-block" class="windows" ></a>
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.2.tar.gz" style="display:inline-block" class="mac" ></a>
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.2.tar.gz" style="display:inline-block" class="linux" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.3.zip" style="display:inline-block" class="windows" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.3.tar.gz" style="display:inline-block" class="mac" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.3.tar.gz" style="display:inline-block" class="linux" ></a>
 					</span>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Server 2.2</span>
+					<span class="span-16 vcenter">Saiku Server 2.3</span>
 					<span class="span-3 none">
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.2.zip" style="display:inline-block" class="windows" ></a>
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.2.tar.gz" style="display:inline-block" class="mac" ></a>
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.2.tar.gz" style="display:inline-block" class="linux" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.3.zip" style="display:inline-block" class="windows" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.3.tar.gz" style="display:inline-block" class="mac" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.3.tar.gz" style="display:inline-block" class="linux" ></a>
 					</span>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Pentaho BI Server Plugin 2.2</span>
+					<span class="span-16 vcenter">Saiku Pentaho BI Server Plugin 2.3</span>
 					<div align="center" class="span-3 none">
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 plugin',this.href]);" href="http://analytical-labs.com/downloads/saiku-plugin-2.2.zip" style="display:inline-block" class="download" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 plugin',this.href]);" href="http://analytical-labs.com/downloads/saiku-plugin-2.3.zip" style="display:inline-block" class="download" ></a>
 					</div>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Backend WAR 2.2</span>
+					<span class="span-16 vcenter">Saiku Backend WAR 2.3</span>
 					<div align="center" class="span-3 none">
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 manual',this.href]);" href="http://analytical-labs.com/downloads/saiku-webapp-2.2.war" style="display:inline-block" class="download" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 manual',this.href]);" href="http://analytical-labs.com/downloads/saiku-webapp-2.3.war" style="display:inline-block" class="download" ></a>
 					</div>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku UI WAR 2.2</span>
+					<span class="span-16 vcenter">Saiku UI WAR 2.3</span>
 					<div align="center" class="span-3 none">
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.2 manual',this.href]);" href="http://analytical-labs.com/downloads/saiku-ui-2.2.war" style="display:inline-block" class="download" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 manual',this.href]);" href="http://analytical-labs.com/downloads/saiku-ui-2.3.war" style="display:inline-block" class="download" ></a>
 					</div>
 				</div>
 			<?php
 			}
 		?>
-                      
+		
+		<div id="main-content" class="span-21 prepend-1 append-1 prepend-top append-bottom">
+                      <h3>Older Downloads</h3>
+                        <p>
+                            <h3>What was new in 2.2?</h3>
+                            <div id="newfeatures" class="prepend-1">
+                            <ul >
+                                <li>
+                                    <strong>Speed Boost</strong>
+                                    - Query execution received a massive speed improvement.
+                                </li>
+                                <li>
+                                    <strong>SSAS, Palo, SAP BW Compatibility</strong>
+                                    - We made sure that saiku works perfectly with other OLAP engines.
+                                </li>
+                                <li>
+                                    <strong>Mondrian Roles</strong>
+                                    - Apply role-based security to your Mondrian OLAP cubes.
+                                </li>
+                                <li>
+                                    <strong>Query Scenarios</strong>
+                                    - Change cell values on your resultset and perform basic What-If Analysis.
+                                </li>
+                                <li>
+                                    <strong>Drill-Through</strong>
+                                    - Display or export all fact rows that make up a specific cell in your OLAP resultset.
+                                </li>
+                                <li>
+                                    <strong>Refresh Datasources / Clear Cache</strong>
+                                    - Reload your datasources configuration and clear the cache from within the UI.
+                                </li>
+                                <li>
+                                    <strong>Faster and more robust UI</strong>
+                                    - The user interface was completely rewritten for 2.2 and includes lots of speed improvements and bug fixes.
+                                </li>
+                                 <li>
+                                    <strong>Charts</strong>
+                                    - Saiku is now capable to produce some basic charts using <a href="https://github.com/webdetails/ccc" title="CCC by Webdetails">CCC by Webdetails</a>.
+                                </li>
+                                <li>
+                                    <strong>Basic Statistics</strong>
+                                    - You can now view some basic statistics (avg, min, max, std. dev, .etc) of your OLAP query.
+                                </li>
+
+                            </ul>
+                            </div>
+                        
+                        </p>
+                       <br />
                         
                     </div>
                     <!-- eof main-content -->
@@ -408,7 +449,7 @@ session_start();
             <div id="footer_wrap" class="container">
                 <!-- copyright -->
                 <div id="copyright" class="span-5">
-                    <strong>Saiku &copy; 2011</strong>
+                    <strong>Saiku &copy; 2012</strong>
                 </div>
                 <!-- eof copyright -->
                 <!-- sitemap -->
