@@ -67,44 +67,42 @@ session_start();
                 <div id="content" class="span-24 prepend-top">
                     <!-- main-content -->
                     <div id="main-content" class="span-21 prepend-1 append-1 prepend-top append-bottom">
-                        <h3>Saiku 2.3</h3>
+                        <h3>Saiku 2.4</h3>
                         <p>
-                            Saiku 2.3 is a new major release that includes lot of improvements.
+                            Saiku 2.4 is a new major release that includes lot of improvements.
                             <br />We have implemented some cool new features, but also fixed some major bugs. You can view the details below.
                             <br />In case we have missed anything, we would appreciate all filed bugs and feature requests in our <a href="https://github.com/OSBI/saiku/issues/" title="Saiku Issue Tracker">Issue Tracker</a>.
                             <br />
-                            <h3>What's new in 2.3?</h3>
+                            <h3>What's new in 2.4?</h3>
                             <div id="newfeatures" class="prepend-1">
                             <ul >
                             	 <li>
-                                    <strong>Sorting</strong>
-                                    - You can sort your results now by name or measure.
+                                    <strong>Apache License Version 2.0</strong>
                                 </li>
-                                <li>
-                                    <strong>Tags</strong>
-                                    - With this new feature you can create new tags (some might call them named filter sets) based on one or serveral cells in your resultset. Saiku will then take the tuples that make up this result and you can apply them to any new query on this cube.
-                                    <br>Example: You can tag a cell "Male / Year 2003" and name the Tag "Tag1"; then create a completely new query and select products on columns vs. customers on rows and apply "Tag1". Saiku will then show you only products and customers which are Male and where there is data for 2003.
+                            	 <li>
+                                    <strong>Folders and Permissions in Repository</strong>
+                                    - You can now create folders and set permissions on files/folders in the repository (saiku standalone version).
                                 </li>
-                                <li>
-                                    <strong>MDX Editor</strong>
-                                    - Long promised, and finally implemented. The MDX Editor is back in saiku. You can now switch to mdx mode and run any arbitrary MDX you like and then save it.
+                            	 <li>
+                                    <strong>New Result Option (Hide Parents)</strong>
+                                    - This feature lets you decide if you want to show parent members or not.
                                 </li>
-                                <li>
-                                    <strong>Tighter integration of the Saiku Biserver Plugin</strong>
-                                    - Picks up mondrian.properties from system/mondrian/mondrian.properties now.
+                            	 <li>
+                                    <strong>Conditional Formatting (from schema.xml and MDX)</strong>
+                                    - Use conditional formatting options as part of the Mondrian Schema Definition or within a MDX query. 
+                                    <br /> Examples: <a href="https://gist.github.com/3899805">https://gist.github.com/3899805</a>
                                 </li>
-                                <li>
-                                    <strong>Improved datasource management</strong>
-                                    - There were some issues where refreshing connections and applying roles didn't work. Both should work fine now!
+                            	 <li>
+                                    <strong>New Excel Export</strong>
+                                    - The Excel Export has been reworked and is now much faster and includes more useful information.
                                 </li>
-
-                                <li>
-                                    <strong>Improved SSAS Compatibility</strong>
-                                    - We improved various areas in saiku to make sure its perfectly compatible with SSAS.
+                            	 <li>
+                                    <strong>Navigational Context Menu</strong>
+                                    - A new context menu for the result table in saiku's DnD mode allows you to quickly navigate through your data.
                                 </li>
-                                <li>
-                                    <strong>Reworked Drillthrough</strong>
-                                    - You can now choose the columns (levels and measures) that you want to see in your drillthrough result.
+                            	 <li>
+                                    <strong>Other small improvements</strong>
+                                    - Explain plan for queries, respect visibility flags of OLAP objects, select multiple measures in drillthrough ...
                                 </li>
                             </ul>
                             </div>
@@ -112,7 +110,7 @@ session_start();
                         </p>
                        <br />
                        
-                       We provide vairous Download Packages, but most users will find it sufficent to either download the <strong>Saiku Server (Including Foodmart DB)</strong> or the <strong>Pentaho BI Server Plugin</strong>.
+                       We provide various Download Packages, but most users will find it sufficent to either download the <strong>Saiku Server (Including Foodmart DB)</strong> or the <strong>Pentaho BI Server Plugin</strong>.
                         <br /><br/>
 		<?php	
 			if($_SESSION['error']==1){
@@ -342,37 +340,37 @@ session_start();
 			?>
 				<h3>Downloads</h3>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Server 2.3 (Including Foodmart DB)</span>
+					<span class="span-16 vcenter">Saiku Server 2.4 (Including Foodmart DB)</span>
 					<span class="span-3 none">
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.3.zip" style="display:inline-block" class="windows" ></a>
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.3.tar.gz" style="display:inline-block" class="mac" ></a>
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.3.tar.gz" style="display:inline-block" class="linux" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.4 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.4.zip" style="display:inline-block" class="windows" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.4 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.4.tar.gz" style="display:inline-block" class="mac" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.4 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-foodmart-2.4.tar.gz" style="display:inline-block" class="linux" ></a>
 					</span>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Server 2.3</span>
+					<span class="span-16 vcenter">Saiku Server 2.4</span>
 					<span class="span-3 none">
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.3.zip" style="display:inline-block" class="windows" ></a>
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.3.tar.gz" style="display:inline-block" class="mac" ></a>
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.3.tar.gz" style="display:inline-block" class="linux" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.4 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.4.zip" style="display:inline-block" class="windows" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.4 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.4.tar.gz" style="display:inline-block" class="mac" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.4 server',this.href]);" href="http://analytical-labs.com/downloads/saiku-server-2.4.tar.gz" style="display:inline-block" class="linux" ></a>
 					</span>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Pentaho BI Server Plugin 2.3</span>
+					<span class="span-16 vcenter">Saiku Pentaho BI Server Plugin 2.4</span>
 					<div align="center" class="span-3 none">
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 plugin',this.href]);" href="http://analytical-labs.com/downloads/saiku-plugin-2.3.zip" style="display:inline-block" class="download" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.4 plugin',this.href]);" href="http://analytical-labs.com/downloads/saiku-plugin-2.4.zip" style="display:inline-block" class="download" ></a>
 					</div>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku Backend WAR 2.3</span>
+					<span class="span-16 vcenter">Saiku Backend WAR 2.4</span>
 					<div align="center" class="span-3 none">
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 manual',this.href]);" href="http://analytical-labs.com/downloads/saiku-webapp-2.3.war" style="display:inline-block" class="download" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.4 manual',this.href]);" href="http://analytical-labs.com/downloads/saiku-webapp-2.4.war" style="display:inline-block" class="download" ></a>
 					</div>
 				</div>
 				<div class="span-21 downloaditem">
-					<span class="span-16 vcenter">Saiku UI WAR 2.3</span>
+					<span class="span-16 vcenter">Saiku UI WAR 2.4</span>
 					<div align="center" class="span-3 none">
-					    <a onclick="_gaq.push(['_trackEvent','Download','2.3 manual',this.href]);" href="http://analytical-labs.com/downloads/saiku-ui-2.3.war" style="display:inline-block" class="download" ></a>
+					    <a onclick="_gaq.push(['_trackEvent','Download','2.4 manual',this.href]);" href="http://analytical-labs.com/downloads/saiku-ui-2.4.war" style="display:inline-block" class="download" ></a>
 					</div>
 				</div>
 			<?php
@@ -381,6 +379,46 @@ session_start();
 		
 		<div id="main-content" class="span-21 prepend-1 append-1 prepend-top append-bottom">
                       <h3>Older Downloads</h3>
+                                          <div id="main-content" class="span-21 prepend-1 append-1 prepend-top append-bottom">
+
+                        <p>
+                            <h3>What was new in 2.3?</h3>
+                            <div id="newfeatures" class="prepend-1">
+                            <ul >
+                            	 <li>
+                                    <strong>Sorting</strong>
+                                    - You can sort your results now by name or measure.
+                                </li>
+                                <li>
+                                    <strong>Tags</strong>
+                                    - With this new feature you can create new tags (some might call them named filter sets) based on one or serveral cells in your resultset. Saiku will then take the tuples that make up this result and you can apply them to any new query on this cube.
+                                    <br>Example: You can tag a cell "Male / Year 2003" and name the Tag "Tag1"; then create a completely new query and select products on columns vs. customers on rows and apply "Tag1". Saiku will then show you only products and customers which are Male and where there is data for 2003.
+                                </li>
+                                <li>
+                                    <strong>MDX Editor</strong>
+                                    - Long promised, and finally implemented. The MDX Editor is back in saiku. You can now switch to mdx mode and run any arbitrary MDX you like and then save it.
+                                </li>
+                                <li>
+                                    <strong>Tighter integration of the Saiku Biserver Plugin</strong>
+                                    - Picks up mondrian.properties from system/mondrian/mondrian.properties now.
+                                </li>
+                                <li>
+                                    <strong>Improved datasource management</strong>
+                                    - There were some issues where refreshing connections and applying roles didn't work. Both should work fine now!
+                                </li>
+
+                                <li>
+                                    <strong>Improved SSAS Compatibility</strong>
+                                    - We improved various areas in saiku to make sure its perfectly compatible with SSAS.
+                                </li>
+                                <li>
+                                    <strong>Reworked Drillthrough</strong>
+                                    - You can now choose the columns (levels and measures) that you want to see in your drillthrough result.
+                                </li>
+                            </ul>
+                            </div>
+                        
+                        </p>
                         <p>
                             <h3>What was new in 2.2?</h3>
                             <div id="newfeatures" class="prepend-1">
