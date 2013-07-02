@@ -100,6 +100,45 @@ a:hover {
     background: #8a1614;
 }
 
+/** Sidebar */
+                .sidebar ul.share-icons {
+                    padding: 0;
+                    margin: 5px 0 10px;
+                    overflow: hidden;
+                }
+                #sidebar ul.share-icons li {
+                    float: left;
+                    margin-right: 4px;
+                    list-style-type: none;
+                    width: 33px;
+                    height: 33px;
+                    display: block;
+                }
+                ul.share-icons a {
+                    border-bottom: none;
+                    width: 33px;
+                    height: 33px;
+                    display: block;
+                }
+                ul.share-icons li a.twitter {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -1px 0 no-repeat;
+                }
+                ul.share-icons li a.dribbble {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -42px 0 no-repeat;
+                }
+                ul.share-icons li a.linkedin {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -83px 0 no-repeat;
+                }
+                ul.share-icons li a.google-plus {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -124px 0 no-repeat;
+                }
+                ul.share-icons li a.quora {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -165px 0 no-repeat;
+                }
+                ul.share-icons li a.github {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -204px 0 no-repeat;
+                }
+
 /** Pricing  */
 .pricing_option {
   border: 1px solid black;
