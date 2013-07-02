@@ -90,6 +90,25 @@ a:hover {
     background: #8a1614;
 }
 
+/** Pricing  */
+.pricing_option {
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  height: 250px;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+}
+
+.pricing_content {
+    height: 130px;
+}
+
+.pricing_option a.button {
+    width: 100px;
+}
+
+
 /** Contact             */
 #contact ul {
     float: right;

@@ -53,6 +53,7 @@
                         <li><a href="index.html" title="Home" class="selected">Home</a></li>
                         <li><a href="screenshots.html" title="Screenshots">Screenshots</a></li>
                         <li><a href="downloads.php" title="Downloads">Downloads</a></li>
+                        <li><a href="pricing.html" title="Pricing">Pricing</a></li>
                         <li><a href="https://docs.analytical-labs.com" title="Documentation" rel="new">Documentation</a></li>
                         <li><a href="https://github.com/OSBI/saiku/issues" title="Issue Tracker" rel="new">Issue Tracker</a></li>
                         <li><a href="http://ask.analytical-labs.com">Forum</a></li>
