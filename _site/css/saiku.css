@@ -59,8 +59,17 @@ a:hover {
 }
 
 /** Logo                */
+#header div {
+    height: 80px;
+}
+#logo {
+    float: left;
+}
+#contact, #navigation {
+    float: right;
+}
 #logo h1 {
-    margin: 0;
+    margin-left: 60px;
     padding: 36px 0 0 0;
 }
 
@@ -70,7 +79,8 @@ a:hover {
 }
 #navigation ul {
     float: left;
-    margin: 0;
+    margin-top: 50px;
+    margin-left: 20px;
     padding: 0;
     line-height: 34px;
 }
