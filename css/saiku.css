@@ -10,8 +10,8 @@
 /**  Body               */
 body {
     background-color: #f9f9f9;
-    background-image: url('../images/body_bg.png');
-    background-repeat: repeat-x;
+    min-width: 1200px;
+
 }
 a {
     color: #8a1614 !important;
@@ -54,22 +54,113 @@ a:hover {
 
 /** Header              */
 #header {
-    height: 107px;
-    color: #f9f9f9;
+    height: 85px;
+    background: #8A1614;
+    background: -webkit-gradient(linear, left top, left bottom, from(#B12623), to(#680E0D));
+    background: -moz-linear-gradient(top, #B12623 0%, #680E0D 100%);
+    box-shadow: 0 3px 10px #777777;
+    -moz-box-shadow: 0 3px 10px #777;
+    -webkit-box-shadow: 0 3px 10px #777;
+}
+#navigation, #contact {
+    margin-top: 25px;
+}
+
+
+
+/** Sidebar */
+#sidebar {
+/*  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #D5D5D5; */
+  float: right;
+  margin-bottom: 1.5em;
+  margin-right: 50px;
+  margin-top: 50px;
+  padding: 15px;
+  width: 300px;
+}
+
+#sidebar .description {
+    line-height: 21px;
+    border-bottom: 1px solid #E6E6E6;
+    margin: 3px 0 20px 0;
+    padding: 0 0 20px 0;
+    width: 260px;
+    color: #666;
+}
+
+.sidebar ul.share-icons {
+    padding: 0;
+    margin: 5px 0 10px;
+    overflow: hidden;
+}
+#sidebar ul.share-icons li {
+    float: left;
+    margin-right: 4px;
+    list-style-type: none;
+    width: 33px;
+    height: 33px;
+    display: block;
+}
+ul.share-icons a {
+    border-bottom: none;
+    width: 33px;
+    height: 33px;
+    display: block;
+}
+ul.share-icons li a.twitter {
+    background: url("../images/social-icons.png") -1px 0 no-repeat;
+}
+ul.share-icons li a.google-plus {
+    background: url("../images/social-icons.png") -124px 0 no-repeat;
+}
+ul.share-icons li a.github {
+    background: url("../images/social-icons.png") -204px 0 no-repeat;
+}
+
+#sidebar .links {
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    list-style-type: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 20px;
+}
+
+#sidebar .links a {
+    color: #4c4c4c;
+}
+
+#sidebar .links a:hover {
+    color: {Color:Accent};
+}
+
+.links .icon {
+    width: 12px;
+    height: 12px;
+    background: #383838 url('http://static.tumblr.com/thpaaos/1xRm66voi/icons_sprite.png');
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+
+.links a:hover .icon {
+    background-color: {Color:Accent};
 }
 
 /** Logo                */
-#header div {
-    height: 80px;
-}
 #logo {
     float: left;
 }
-#contact, #navigation {
+#contact, #navigation, #ribbon {
     float: right;
+}
+#ribbon {
+    width: 150px;
 }
 #logo h1 {
     margin-left: 60px;
+    margin-top: -20px;
     padding: 36px 0 0 0;
 }
 
@@ -79,7 +170,6 @@ a:hover {
 }
 #navigation ul {
     float: left;
-    margin-top: 50px;
     margin-left: 20px;
     padding: 0;
     line-height: 34px;
@@ -92,12 +182,10 @@ a:hover {
     color: #f9f9f9 !important;
     text-decoration: none;
     padding: 9px 10px;
+    font-size: 16px;
 }
 #navigation ul li a:hover {
-    background: #8a1614;
-}
-#navigation ul li a.selected {
-    background: #8a1614;
+    text-decoration: underline;
 }
 
 /** Sidebar */
@@ -178,16 +266,31 @@ a:hover {
 
 /** Banner              */
 #banner     {
-    background: #fff;
+    /*background: #fff;
     background-image: url('../images/banner_bg.png');
     background-repeat: no-repeat;
     background-position: 480px -5px;
+    */
+    position: relative;
+    background: #8A1614;
+    background: -webkit-gradient(linear, left top, left bottom, from(#AD1716), to(#680E0D));
+    background: -moz-linear-gradient(top, #AD1716 0%, #680E0D 100%);
     border: 1px solid #d5d5d5;
-    height: 200px;
+    height: 270px;
+    color: white;
     -webkit-border-radius: 2px;
     -webkit-box-shadow: 0px 0px 3px #ccc;
     -moz-border-radius: 2px;
     -moz-box-shadow: 0px 0px 3px #ccc;
+}
+
+#banner h1 {
+    color: #f9f9f9;
+}
+#banner .bg_image {
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
 }
 
 /** Download Area */
@@ -268,12 +371,6 @@ a:hover {
     border-bottom: 1px solid #d5d5d5;
 }
 
-/** Sidebar             */
-#sidebar h4 {
-    font-weight: bold;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #d5d5d5;
-}
 
 /** Footer              */
 #footer {
@@ -312,37 +409,73 @@ a:hover {
     padding-right: 0;
 }
 
-/**Downloads Form		*/
+/**Downloads Form       */
 form{
-	padding:40px;
-	-webkit-border-radius: 2px;
+    padding:40px;
+    -webkit-border-radius: 2px;
     -webkit-box-shadow: 0px 0px 3px #ccc;
     -moz-border-radius: 2px;
     -moz-box-shadow: 0px 0px 3px #ccc;
 }
 label{display:block;}
 input[type=text]{
-	width:200px;
-	display:block;
-	padding:3px;
-	-webkit-border-radius: 2px;
+    width:200px;
+    display:block;
+    padding:3px;
+    -webkit-border-radius: 2px;
     -webkit-box-shadow: 0px 0px 3px #ccc;
     -moz-border-radius: 2px;
     -moz-box-shadow: 0px 0px 3px #ccc;
 }
 input[type=text]:focus{}
-select{	
-	width:210px;
-	display:block;
-	padding:3px;
-	-webkit-border-radius: 2px;
+select{ 
+    width:210px;
+    display:block;
+    padding:3px;
+    -webkit-border-radius: 2px;
     -webkit-box-shadow: 0px 0px 3px #ccc;
     -moz-border-radius: 2px;
     -moz-box-shadow: 0px 0px 3px #ccc;
-	border:1px solid #bbb;
-	margin-bottom:12px;
+    border:1px solid #bbb;
+    margin-bottom:12px;
 }
 
 p.subtle{font-size:10px;color:#4d4d4d;margin-top:20px;}
 p.subtle a{color:#4d4d4d;}
 p.subtle a:hover{color:#bbb;}
+
+
+
+/** screenshots */
+
+    a.fancybox {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 8px;
+        overflow: hidden;
+        border: solid 5px #fff;
+        border: solid 5px rgba(255, 255, 255, .70);
+        box-shadow: rgba(0,0,0, 0.3) 0px 0px 5px;
+        -moz-box-shadow: rgba(0,0,0, 0.3) 0px 0px 5px;
+        -webkit-box-shadow: rgba(0,0,0, 0.3) 0px 0px 5px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    a.fancybox img {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        height: 100px;
+    }
+    #screenshots a.fancybox:hover {
+        background: url('../images/zoom.png') no-repeat center center;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
