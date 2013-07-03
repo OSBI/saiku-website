@@ -15,8 +15,20 @@
         <!-- saiku css -->
         <link rel="stylesheet" href="css/saiku.css" type="text/css" media="screen, projection">
         <!-- eof saiku css -->
+
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen, projection">
+
+
     </head>
     <body>
+        <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="js/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+        <script src="js/fancybox/jquery.easing-1.3.pack.js" type="text/javascript"></script>
+        
+        
+        
+
                 <!-- header -->
                 <div id="header">
                     <!-- logo -->
@@ -59,8 +71,6 @@
             <div id="sidebar" class="sidebar">
             <div class="description">
 
-            <b>The Vision</b><br />
-            Turning numbers into information shouldn't be hard, it should be easy and fun. The Saiku project is all about creating tools that are easy-to-use by anyone who wants to crunch numbers, visually explore datasets and gain insight. <br /><br />
 <a href="https://twitter.com/SaikuAnalytics" class="twitter-follow-button" data-show-count="true" data-size="medium"></a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
