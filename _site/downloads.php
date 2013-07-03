@@ -67,6 +67,7 @@
                 <!-- eof header -->
         <div class="clear"></div>
         <!-- wrap -->
+    <div id="outer_wrap">
         <div id="wrap">
             <div id="sidebar" class="sidebar">
             <div class="description">
@@ -510,6 +511,7 @@ session_start();
             </div>
             <!-- eof main -->
         </div>
+    </div>
         <!-- eof wrap -->
         <!-- footer -->
         <div id="footer">

@@ -1,7 +1,6 @@
 /** Blueprint Overrides */
 .container {
-    width: 830px;
-    margin: 0 auto;
+    width: 950px;
 }
 .span-21 {
     margin-right: 0;
@@ -48,8 +47,18 @@ a:hover {
 }
 
 /** Main                */
+#outer_wrap {
+    display: block;
+    min-width: 1400px;
+}
+#wrap {
+    width: 1400px;
+    margin: 0 auto;
+}
 #main {
     padding-bottom: 45px;
+    width: 950px;
+    float: right;
 }
 
 /** Header              */
@@ -72,12 +81,12 @@ a:hover {
 #sidebar {
 /*  background: none repeat scroll 0 0 #FFFFFF;
   border: 1px solid #D5D5D5; */
-  float: right;
   margin-bottom: 1.5em;
-  margin-right: 50px;
-  margin-top: 50px;
+  margin-left: 50px;
+  margin-top: 250px;
   padding: 15px;
   width: 300px;
+  float: right;
 }
 
 #sidebar .description {

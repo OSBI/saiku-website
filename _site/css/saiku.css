@@ -1,7 +1,6 @@
 /** Blueprint Overrides */
 .container {
-    width: 830px;
-    margin: 0 auto;
+    width: 950px;
 }
 .span-21 {
     margin-right: 0;
@@ -48,8 +47,18 @@ a:hover {
 }
 
 /** Main                */
+#outer_wrap {
+    display: block;
+    min-width: 1400px;
+}
+#wrap {
+    width: 1400px;
+    margin: 0 auto;
+}
 #main {
     padding-bottom: 45px;
+    width: 950px;
+    float: right;
 }
 
 /** Header              */
@@ -72,12 +81,12 @@ a:hover {
 #sidebar {
 /*  background: none repeat scroll 0 0 #FFFFFF;
   border: 1px solid #D5D5D5; */
-  float: right;
   margin-bottom: 1.5em;
-  margin-right: 50px;
-  margin-top: 50px;
+  margin-left: 50px;
+  margin-top: 250px;
   padding: 15px;
   width: 300px;
+  float: right;
 }
 
 #sidebar .description {
@@ -187,6 +196,45 @@ ul.share-icons li a.github {
 #navigation ul li a:hover {
     text-decoration: underline;
 }
+
+/** Sidebar */
+                .sidebar ul.share-icons {
+                    padding: 0;
+                    margin: 5px 0 10px;
+                    overflow: hidden;
+                }
+                #sidebar ul.share-icons li {
+                    float: left;
+                    margin-right: 4px;
+                    list-style-type: none;
+                    width: 33px;
+                    height: 33px;
+                    display: block;
+                }
+                ul.share-icons a {
+                    border-bottom: none;
+                    width: 33px;
+                    height: 33px;
+                    display: block;
+                }
+                ul.share-icons li a.twitter {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -1px 0 no-repeat;
+                }
+                ul.share-icons li a.dribbble {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -42px 0 no-repeat;
+                }
+                ul.share-icons li a.linkedin {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -83px 0 no-repeat;
+                }
+                ul.share-icons li a.google-plus {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -124px 0 no-repeat;
+                }
+                ul.share-icons li a.quora {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -165px 0 no-repeat;
+                }
+                ul.share-icons li a.github {
+                    background: url("http://static.nikgraf.com/blog/social-icons.png") -204px 0 no-repeat;
+                }
 
 /** Pricing  */
 .pricing_option {
