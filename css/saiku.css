@@ -220,22 +220,25 @@ ul.share-icons li a.github {
                 ul.share-icons li a.twitter {
                     background: url("http://static.nikgraf.com/blog/social-icons.png") -1px 0 no-repeat;
                 }
-                ul.share-icons li a.dribbble {
-                    background: url("http://static.nikgraf.com/blog/social-icons.png") -42px 0 no-repeat;
-                }
-                ul.share-icons li a.linkedin {
-                    background: url("http://static.nikgraf.com/blog/social-icons.png") -83px 0 no-repeat;
-                }
                 ul.share-icons li a.google-plus {
                     background: url("http://static.nikgraf.com/blog/social-icons.png") -124px 0 no-repeat;
-                }
-                ul.share-icons li a.quora {
-                    background: url("http://static.nikgraf.com/blog/social-icons.png") -165px 0 no-repeat;
                 }
                 ul.share-icons li a.github {
                     background: url("http://static.nikgraf.com/blog/social-icons.png") -204px 0 no-repeat;
                 }
 
+/** main services */
+.service_option {
+  padding: 10px;
+  height: 280px;
+  text-align: center;
+  vertical-align: middle;
+  width: 190px;
+}
+
+.service_option a.button {
+    width: 100px;
+}
 /** Pricing  */
 .pricing_option {
   border: 1px solid black;
@@ -243,9 +246,8 @@ ul.share-icons li a.github {
   height: 250px;
   text-align: center;
   vertical-align: middle;
-  width: 200px;
+  width: 190px;
 }
-
 .pricing_content {
     height: 130px;
 }
